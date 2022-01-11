@@ -1,0 +1,21 @@
+.upload_Container{
+    height: 120px;
+    width: 600px;
+    border-radius: 15px;
+    margin-top: 15px
+}
+.upload_box{
+    height: 40px;
+    width: 400px;
+    border: 0px;
+    background-color: #EFF2F5;
+    border-radius: 30px;
+    font-size: 16px;
+   
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.upload_img{
+    margin-top: 50px;
+    margin-left: 30px;
+}
