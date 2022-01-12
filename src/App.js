@@ -1,14 +1,37 @@
-import NavBar from './Component/NavBar/NavBar';
-import './App.css';
-import Layout from './Component/NavBar/MainPage/Layout';
+import React from 'react'
+import Registration from './RegistrationComponent/Registration';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { Routes ,Link, Route} from 'react-router-dom';
+import Login from './LoginComponent/Login';
 
-function App() {
-  return (
-    <div className="App">
-     <NavBar />
-     <Layout />
+import NavBar from './Component/NavBar/NavBar'
+import Layout from './Component/NavBar/MainPage/Layout'
+
+class App extends React.Component{
+  render(){
+    return <div>
+      <Link to="/home"></Link>
+      <Routes>
+      <Route path="/home" element={<><NavBar /><Layout /></>} />
+      </Routes>
+    
+     <div className="App">
+     
+     
+      <div className="outer">
+        <div className="inner">
+          <Routes>
+          <Route path="/" element={<Login/>} />
+            <Route path="/sign-up" element={<Registration/>} />
+           
+          </Routes>
+       </div></div>
+       
     </div>
-  );
+   
+    <br></br>
+         <br></br>
+    </div>
+  }
 }
-
 export default App;

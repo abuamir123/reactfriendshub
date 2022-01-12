@@ -18,7 +18,7 @@ class NavBar extends Component {
             <div>
                 <Grid container className="navbar_main">
                     <Grid item xs={3}><div className='navbar_leftbar'>
-                        <img className='navbar_logo' src={fblogo} width="40px" />
+                        
                         <input className='navbar_search' type="text" placeholder='Search FriendsHub'/>
                     </div></Grid>
 

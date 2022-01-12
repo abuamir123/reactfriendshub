@@ -4,6 +4,9 @@ import { Grid } from '@material-ui/core';
 import LeftSide from './LeftSidePanel/LeftSide';
 import StatusBar from './StatusBar/StatusBar';
 import UploadSection from './UploadSection/UploadSection';
+import Post from './PostContainer/Post';
+import PostContainer from './PostContainer/PostContainer';
+import RightSide from './RightSidePanel/RightSide';
 
 class Layout extends Component {
     constructor(props) {
@@ -25,10 +28,11 @@ class Layout extends Component {
 
                        <StatusBar />
                        <UploadSection />
+                       <PostContainer />
 
                     </Grid>
                     <Grid item xs={3}>
-                        
+                        <RightSide />
                     </Grid>
                 </Grid>
             </div>
