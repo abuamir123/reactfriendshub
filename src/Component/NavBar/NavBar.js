@@ -8,6 +8,7 @@ import watch from "../../images/watch.svg";
 import market from "../../images/market.svg";
 import group from "../../images/groups.svg";
 import Avatar from '@material-ui/core/Avatar';
+import {Navigate,Link, Routes, Route} from 'react-router-dom'
 class NavBar extends Component {
     constructor(props) {
         super(props);
@@ -46,7 +47,7 @@ class NavBar extends Component {
                         <div className="navbar_right">
                             <div className='navbar_righttab'>
                                 <Avatar className="navbar_rightimg" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.seekpng.com%2Fipng%2Fu2y3q8t4t4o0a9a9_my-profile-icon-blank-profile-image-circle%2F&psig=AOvVaw0bjVOQqtYUiErEOtnglMmY&ust=1641892014256000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCJjqu8bqpvUCFQAAAAAdAAAAABAD" />
-                               <div className='navbar_profilename'>Name</div>
+                               <div className='navbar_profilename'>  <Link className="navbar_profilename" to="/profile">Profile</Link></div>
                                 </div>
 
                         </div>
