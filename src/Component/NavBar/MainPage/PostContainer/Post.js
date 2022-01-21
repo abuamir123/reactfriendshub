@@ -35,12 +35,11 @@ class Post extends Component {
                 {this.props.object.description}
                 </div>
                 {/*Image */}
-                <div className='post_image'>
-                    {
-                        this.isImageAvailable() ?  <img src={this.props.object.post_img} width="700px"/>:<span></span>
-                    }
-                    
-                </div>
+                <div className="post__image">
+                        {
+                            this.isImageAvailable(this.props.object.postImgURL) ? <img src={this.props.object.postImgURL} width="700px" /> : <span></span>
+                        }
+                    </div>
                 {/*like */}
                 <div className="post__likeCountContainer">
                         <div className="post__like">

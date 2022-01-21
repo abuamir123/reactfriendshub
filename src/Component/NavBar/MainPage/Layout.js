@@ -15,7 +15,10 @@ class Layout extends Component {
         }
     }
 
-  
+  letUpdate =()=>
+  {
+    this.refs.child.getData();
+  }
 
     render() { 
         return ( 
@@ -27,8 +30,8 @@ class Layout extends Component {
                     <Grid item xs={6} className="middleContainer">
 
                        <StatusBar />
-                       <UploadSection />
-                       <PostContainer />
+                       <UploadSection  update={this.letUpdate} />
+                       <PostContainer ref="child" />
 
                     </Grid>
                     <Grid item xs={3}>
